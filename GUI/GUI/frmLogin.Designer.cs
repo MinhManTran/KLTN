@@ -29,114 +29,137 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTaikhoan = new System.Windows.Forms.TextBox();
-            this.txtMatkhau = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.lblTrangthai = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            btnLogin = new Button();
+            lblTrangthai = new Label();
+            label4 = new Label();
+            txtTaikhoan = new TextBox();
+            txtMatkhau = new TextBox();
+            btnQmk = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(271, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(125, 128);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(271, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(125, 128);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(233, 154);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Hệ thống quản lý nhân sự";
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold);
+            label1.Location = new Point(233, 154);
+            label1.Name = "label1";
+            label1.Size = new Size(217, 22);
+            label1.TabIndex = 1;
+            label1.Text = "Hệ thống quản lý nhân sự";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(141, 243);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 19);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tài Khoản :";
+            label2.AutoSize = true;
+            label2.Font = new Font("Times New Roman", 12F);
+            label2.Location = new Point(141, 243);
+            label2.Name = "label2";
+            label2.Size = new Size(80, 19);
+            label2.TabIndex = 2;
+            label2.Text = "Tài Khoản :";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(141, 297);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 19);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Mật Khẩu :";
-            // 
-            // txtTaikhoan
-            // 
-            this.txtTaikhoan.Location = new System.Drawing.Point(223, 239);
-            this.txtTaikhoan.Name = "txtTaikhoan";
-            this.txtTaikhoan.Size = new System.Drawing.Size(241, 23);
-            this.txtTaikhoan.TabIndex = 4;
-            // 
-            // txtMatkhau
-            // 
-            this.txtMatkhau.Location = new System.Drawing.Point(223, 297);
-            this.txtMatkhau.Name = "txtMatkhau";
-            this.txtMatkhau.Size = new System.Drawing.Size(241, 23);
-            this.txtMatkhau.TabIndex = 5;
-            this.txtMatkhau.UseSystemPasswordChar = true;
+            label3.AutoSize = true;
+            label3.Font = new Font("Times New Roman", 12F);
+            label3.Location = new Point(141, 297);
+            label3.Name = "label3";
+            label3.Size = new Size(78, 19);
+            label3.TabIndex = 3;
+            label3.Text = "Mật Khẩu :";
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnLogin.Location = new System.Drawing.Point(223, 338);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(113, 33);
-            this.btnLogin.TabIndex = 6;
-            this.btnLogin.Text = "Đăng nhập";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            btnLogin.BackColor = Color.CornflowerBlue;
+            btnLogin.Location = new Point(236, 338);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(113, 33);
+            btnLogin.TabIndex = 6;
+            btnLogin.Text = "Đăng nhập";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // lblTrangthai
             // 
-            this.lblTrangthai.AutoSize = true;
-            this.lblTrangthai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTrangthai.ForeColor = System.Drawing.Color.IndianRed;
-            this.lblTrangthai.Location = new System.Drawing.Point(36, 408);
-            this.lblTrangthai.Name = "lblTrangthai";
-            this.lblTrangthai.Size = new System.Drawing.Size(80, 19);
-            this.lblTrangthai.TabIndex = 7;
-            this.lblTrangthai.Text = "Trạng Thái :";
+            lblTrangthai.AutoSize = true;
+            lblTrangthai.Font = new Font("Times New Roman", 12F);
+            lblTrangthai.ForeColor = Color.IndianRed;
+            lblTrangthai.Location = new Point(36, 408);
+            lblTrangthai.Name = "lblTrangthai";
+            lblTrangthai.Size = new Size(80, 19);
+            lblTrangthai.TabIndex = 7;
+            lblTrangthai.Text = "Trạng Thái :";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Times New Roman", 12F);
+            label4.Location = new Point(470, 338);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 19);
+            label4.TabIndex = 9;
+            // 
+            // txtTaikhoan
+            // 
+            txtTaikhoan.Location = new Point(236, 239);
+            txtTaikhoan.Name = "txtTaikhoan";
+            txtTaikhoan.Size = new Size(353, 23);
+            txtTaikhoan.TabIndex = 10;
+            // 
+            // txtMatkhau
+            // 
+            txtMatkhau.Location = new Point(236, 293);
+            txtMatkhau.Name = "txtMatkhau";
+            txtMatkhau.Size = new Size(353, 23);
+            txtMatkhau.TabIndex = 11;
+            txtMatkhau.UseSystemPasswordChar = true;
+            // 
+            // btnQmk
+            // 
+            btnQmk.BackColor = Color.CornflowerBlue;
+            btnQmk.Location = new Point(476, 338);
+            btnQmk.Name = "btnQmk";
+            btnQmk.Size = new Size(113, 33);
+            btnQmk.TabIndex = 13;
+            btnQmk.Text = "Quên mật khẩu";
+            btnQmk.UseVisualStyleBackColor = false;
+            btnQmk.Click += btnQmk_Click;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(678, 450);
-            this.Controls.Add(this.lblTrangthai);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtMatkhau);
-            this.Controls.Add(this.txtTaikhoan);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "frmLogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Đăng Nhập";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Aqua;
+            ClientSize = new Size(678, 450);
+            Controls.Add(btnQmk);
+            Controls.Add(txtMatkhau);
+            Controls.Add(txtTaikhoan);
+            Controls.Add(label4);
+            Controls.Add(lblTrangthai);
+            Controls.Add(btnLogin);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            Name = "frmLogin";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Đăng Nhập";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -145,9 +168,11 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox txtTaikhoan;
-        private TextBox txtMatkhau;
         private Button btnLogin;
         private Label lblTrangthai;
+        private Label label4;
+        private TextBox txtTaikhoan;
+        private TextBox txtMatkhau;
+        private Button btnQmk;
     }
 }

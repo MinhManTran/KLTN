@@ -11,5 +11,6 @@ namespace DTO
         public string TenTK { get; set; }
         public string LoaiTK { get; set; }
         public string Matkhau { get; set; }
+        public string Email { get; set; } 
     }
 }

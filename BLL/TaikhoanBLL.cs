@@ -31,5 +31,11 @@ namespace BLL
             string info = tkDAL.GetLoaiTK(taikhoan);
             return info;
         }
+
+        public string GetEmail(Taikhoan taikhoan)
+        {
+            string info = tkDAL.GetEmail(taikhoan);
+            return info;
+        }
     }
 }

@@ -83,5 +83,36 @@ namespace DAL
             }
             return LoaiTK;
         }
+
+        public static string GetEmailDTO(Taikhoan taikhoan)
+        {
+            string Email = null;
+            // Hàm connect toiws CSDL
+            SqlConnection conn = SqlConnectionData.Connect();
+            conn.Open();
+            SqlCommand command = new SqlCommand("proc_Email", conn);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@user", taikhoan.TenTK);
+            //command.Parameters.AddWithValue("@pass", taikhoan.Matkhau);
+            //command.Parameters.AddWithValue("@LoaiTK", taikhoan.LoaiTK);
+
+            command.Connection = conn;
+            SqlDataReader reader = command.ExecuteReader();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    Email = reader.GetString(0);
+                    return Email;
+                }
+                reader.Close();
+                conn.Close();
+            }
+            else
+            {
+                return "Lỗi";
+            }
+            return Email;
+        }
     }
 }

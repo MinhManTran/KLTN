@@ -22,5 +22,11 @@ namespace DAL
             string info = GetLoaiTKDTO(taikhoan);
             return info;
         }
+
+        public string GetEmail(Taikhoan taikhoan)
+        {
+            string info = GetEmailDTO(taikhoan);
+            return info;
+        }
     }
 }
