@@ -10,7 +10,7 @@
                 //Principal
                 mnuPheduyet.Enabled = true;
                 mnuDanhsach.Enabled = true;
-                mnuDieudong.Enabled = false;
+                mnuLuongthuong.Enabled = false;
                 mnuThuyenchuyen.Enabled = false;
                 mnuKiemnhiem.Enabled = false;
                 mnuBietphai.Enabled = false;
@@ -24,7 +24,7 @@
             {
                 //HR
                 mnuDanhsach.Enabled = true;
-                mnuDieudong.Enabled = true;
+                mnuLuongthuong.Enabled = true;
                 mnuThuyenchuyen.Enabled = true;
                 mnuKiemnhiem.Enabled = true;
                 mnuBietphai.Enabled = true;
@@ -41,7 +41,7 @@
             {
                 //Lecturers
                 mnuDanhsach.Enabled = true;
-                mnuDieudong.Enabled = false;
+                mnuLuongthuong.Enabled = false;
                 mnuThuyenchuyen.Enabled = false;
                 mnuKiemnhiem.Enabled = false;
                 mnuBietphai.Enabled = false;
@@ -82,7 +82,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             menuStrip1 = new MenuStrip();
             mnuDanhsach = new ToolStripMenuItem();
-            mnuDieudong = new ToolStripMenuItem();
+            mnuLuongthuong = new ToolStripMenuItem();
             mnuThuyenchuyen = new ToolStripMenuItem();
             mnuKiemnhiem = new ToolStripMenuItem();
             mnuBietphai = new ToolStripMenuItem();
@@ -98,7 +98,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { mnuDanhsach, mnuDieudong, mnuThuyenchuyen, mnuKiemnhiem, mnuBietphai, mnuDaotao, mnuCudihoc, mnuKhenthuong, mnuBHXH, mnuBienche, mnuPheduyet });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mnuDanhsach, mnuLuongthuong, mnuThuyenchuyen, mnuKiemnhiem, mnuBietphai, mnuDaotao, mnuCudihoc, mnuKhenthuong, mnuBHXH, mnuBienche, mnuPheduyet });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1266, 24);
@@ -113,12 +113,13 @@
             mnuDanhsach.Text = "Danh sách giảng viên";
             mnuDanhsach.Click += mnuDanhsach_Click;
             // 
-            // mnuDieudong
+            // mnuLuongthuong
             // 
-            mnuDieudong.BackColor = Color.Lavender;
-            mnuDieudong.Name = "mnuDieudong";
-            mnuDieudong.Size = new Size(74, 20);
-            mnuDieudong.Text = "Điều động";
+            mnuLuongthuong.BackColor = Color.Lavender;
+            mnuLuongthuong.Name = "mnuLuongthuong";
+            mnuLuongthuong.Size = new Size(95, 20);
+            mnuLuongthuong.Text = "Lương thưởng";
+            mnuLuongthuong.Click += mnuLuongthuong_Click;
             // 
             // mnuThuyenchuyen
             // 
@@ -220,7 +221,7 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem mnuDanhsach;
-        private ToolStripMenuItem mnuDieudong;
+        private ToolStripMenuItem mnuLuongthuong;
         private ToolStripMenuItem mnuThuyenchuyen;
         private ToolStripMenuItem mnuKiemnhiem;
         private ToolStripMenuItem mnuBietphai;

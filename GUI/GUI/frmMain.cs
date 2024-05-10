@@ -20,8 +20,8 @@ namespace QLNhânSự
 
         private void mnuDanhsach_Click(object sender, EventArgs e)
         {
-            frmDanhsach frmDanhsach = new frmDanhsach();
-            frmDanhsach.Show();
+            frmDShoso frmDShoso = new frmDShoso();
+            frmDShoso.Show();
             this.Hide();
         }
 
@@ -43,6 +43,13 @@ namespace QLNhânSự
         {
             frmLogin frmLogin = new frmLogin();
             frmLogin.Show();
+            this.Close();
+        }
+
+        private void mnuLuongthuong_Click(object sender, EventArgs e)
+        {
+            frmLuongthuongphucap frmLuongthuongphucap = new frmLuongthuongphucap();
+            frmLuongthuongphucap.Show();
             this.Close();
         }
     }

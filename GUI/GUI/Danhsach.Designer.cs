@@ -81,6 +81,7 @@
             dtgMain.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgMain.Location = new Point(30, 139);
             dtgMain.Name = "dtgMain";
+            dtgMain.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dtgMain.Size = new Size(496, 434);
             dtgMain.TabIndex = 1;
             dtgMain.CellClick += dtgMain_CellClick;
