@@ -80,137 +80,138 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.mnuDanhsach = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuDieudong = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuThuyenchuyen = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuKiemnhiem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuBietphai = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuDaotao = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuCudihoc = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuKhenthuong = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuBHXH = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuBienche = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPheduyet = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            menuStrip1 = new MenuStrip();
+            mnuDanhsach = new ToolStripMenuItem();
+            mnuDieudong = new ToolStripMenuItem();
+            mnuThuyenchuyen = new ToolStripMenuItem();
+            mnuKiemnhiem = new ToolStripMenuItem();
+            mnuBietphai = new ToolStripMenuItem();
+            mnuDaotao = new ToolStripMenuItem();
+            mnuCudihoc = new ToolStripMenuItem();
+            mnuKhenthuong = new ToolStripMenuItem();
+            mnuBHXH = new ToolStripMenuItem();
+            mnuBienche = new ToolStripMenuItem();
+            mnuPheduyet = new ToolStripMenuItem();
+            lblDangxuat = new LinkLabel();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuDanhsach,
-            this.mnuDieudong,
-            this.mnuThuyenchuyen,
-            this.mnuKiemnhiem,
-            this.mnuBietphai,
-            this.mnuDaotao,
-            this.mnuCudihoc,
-            this.mnuKhenthuong,
-            this.mnuBHXH,
-            this.mnuBienche,
-            this.mnuPheduyet});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1266, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mnuDanhsach, mnuDieudong, mnuThuyenchuyen, mnuKiemnhiem, mnuBietphai, mnuDaotao, mnuCudihoc, mnuKhenthuong, mnuBHXH, mnuBienche, mnuPheduyet });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1266, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
             // mnuDanhsach
             // 
-            this.mnuDanhsach.BackColor = System.Drawing.Color.Lavender;
-            this.mnuDanhsach.Name = "mnuDanhsach";
-            this.mnuDanhsach.Size = new System.Drawing.Size(132, 20);
-            this.mnuDanhsach.Text = "Danh sách giảng viên";
-            this.mnuDanhsach.Click += new System.EventHandler(this.mnuDanhsach_Click);
+            mnuDanhsach.BackColor = Color.Lavender;
+            mnuDanhsach.Name = "mnuDanhsach";
+            mnuDanhsach.Size = new Size(132, 20);
+            mnuDanhsach.Text = "Danh sách giảng viên";
+            mnuDanhsach.Click += mnuDanhsach_Click;
             // 
             // mnuDieudong
             // 
-            this.mnuDieudong.BackColor = System.Drawing.Color.Lavender;
-            this.mnuDieudong.Name = "mnuDieudong";
-            this.mnuDieudong.Size = new System.Drawing.Size(74, 20);
-            this.mnuDieudong.Text = "Điều động";
+            mnuDieudong.BackColor = Color.Lavender;
+            mnuDieudong.Name = "mnuDieudong";
+            mnuDieudong.Size = new Size(74, 20);
+            mnuDieudong.Text = "Điều động";
             // 
             // mnuThuyenchuyen
             // 
-            this.mnuThuyenchuyen.BackColor = System.Drawing.Color.Lavender;
-            this.mnuThuyenchuyen.Name = "mnuThuyenchuyen";
-            this.mnuThuyenchuyen.Size = new System.Drawing.Size(100, 20);
-            this.mnuThuyenchuyen.Text = "Thuyên chuyển";
+            mnuThuyenchuyen.BackColor = Color.Lavender;
+            mnuThuyenchuyen.Name = "mnuThuyenchuyen";
+            mnuThuyenchuyen.Size = new Size(100, 20);
+            mnuThuyenchuyen.Text = "Thuyên chuyển";
             // 
             // mnuKiemnhiem
             // 
-            this.mnuKiemnhiem.BackColor = System.Drawing.Color.Lavender;
-            this.mnuKiemnhiem.Name = "mnuKiemnhiem";
-            this.mnuKiemnhiem.Size = new System.Drawing.Size(83, 20);
-            this.mnuKiemnhiem.Text = "Kiêm nhiệm";
+            mnuKiemnhiem.BackColor = Color.Lavender;
+            mnuKiemnhiem.Name = "mnuKiemnhiem";
+            mnuKiemnhiem.Size = new Size(83, 20);
+            mnuKiemnhiem.Text = "Kiêm nhiệm";
             // 
             // mnuBietphai
             // 
-            this.mnuBietphai.BackColor = System.Drawing.Color.Lavender;
-            this.mnuBietphai.Name = "mnuBietphai";
-            this.mnuBietphai.Size = new System.Drawing.Size(65, 20);
-            this.mnuBietphai.Text = "Biệt phái";
-            this.mnuBietphai.Click += new System.EventHandler(this.mnuBietphai_Click);
+            mnuBietphai.BackColor = Color.Lavender;
+            mnuBietphai.Name = "mnuBietphai";
+            mnuBietphai.Size = new Size(65, 20);
+            mnuBietphai.Text = "Biệt phái";
+            mnuBietphai.Click += mnuBietphai_Click;
             // 
             // mnuDaotao
             // 
-            this.mnuDaotao.BackColor = System.Drawing.Color.Lavender;
-            this.mnuDaotao.Name = "mnuDaotao";
-            this.mnuDaotao.Size = new System.Drawing.Size(118, 20);
-            this.mnuDaotao.Text = "Đào tạo bồi dưỡng";
+            mnuDaotao.BackColor = Color.Lavender;
+            mnuDaotao.Name = "mnuDaotao";
+            mnuDaotao.Size = new Size(118, 20);
+            mnuDaotao.Text = "Đào tạo bồi dưỡng";
             // 
             // mnuCudihoc
             // 
-            this.mnuCudihoc.BackColor = System.Drawing.Color.Lavender;
-            this.mnuCudihoc.Name = "mnuCudihoc";
-            this.mnuCudihoc.Size = new System.Drawing.Size(70, 20);
-            this.mnuCudihoc.Text = "Cử đi học";
-            this.mnuCudihoc.Click += new System.EventHandler(this.mnuCudihoc_Click);
+            mnuCudihoc.BackColor = Color.Lavender;
+            mnuCudihoc.Name = "mnuCudihoc";
+            mnuCudihoc.Size = new Size(70, 20);
+            mnuCudihoc.Text = "Cử đi học";
+            mnuCudihoc.Click += mnuCudihoc_Click;
             // 
             // mnuKhenthuong
             // 
-            this.mnuKhenthuong.BackColor = System.Drawing.Color.Lavender;
-            this.mnuKhenthuong.Name = "mnuKhenthuong";
-            this.mnuKhenthuong.Size = new System.Drawing.Size(135, 20);
-            this.mnuKhenthuong.Text = "Khen thưởng / Kỷ luật";
+            mnuKhenthuong.BackColor = Color.Lavender;
+            mnuKhenthuong.Name = "mnuKhenthuong";
+            mnuKhenthuong.Size = new Size(135, 20);
+            mnuKhenthuong.Text = "Khen thưởng / Kỷ luật";
             // 
             // mnuBHXH
             // 
-            this.mnuBHXH.BackColor = System.Drawing.Color.Lavender;
-            this.mnuBHXH.Name = "mnuBHXH";
-            this.mnuBHXH.Size = new System.Drawing.Size(93, 20);
-            this.mnuBHXH.Text = "BHXH / BHTN";
+            mnuBHXH.BackColor = Color.Lavender;
+            mnuBHXH.Name = "mnuBHXH";
+            mnuBHXH.Size = new Size(93, 20);
+            mnuBHXH.Text = "BHXH / BHTN";
             // 
             // mnuBienche
             // 
-            this.mnuBienche.BackColor = System.Drawing.Color.Lavender;
-            this.mnuBienche.Name = "mnuBienche";
-            this.mnuBienche.Size = new System.Drawing.Size(119, 20);
-            this.mnuBienche.Text = "Biên chế hợp đồng";
+            mnuBienche.BackColor = Color.Lavender;
+            mnuBienche.Name = "mnuBienche";
+            mnuBienche.Size = new Size(119, 20);
+            mnuBienche.Text = "Biên chế hợp đồng";
             // 
             // mnuPheduyet
             // 
-            this.mnuPheduyet.BackColor = System.Drawing.Color.Lavender;
-            this.mnuPheduyet.Name = "mnuPheduyet";
-            this.mnuPheduyet.Size = new System.Drawing.Size(104, 20);
-            this.mnuPheduyet.Text = "Phê duyệt hồ sơ";
+            mnuPheduyet.BackColor = Color.Lavender;
+            mnuPheduyet.Name = "mnuPheduyet";
+            mnuPheduyet.Size = new Size(104, 20);
+            mnuPheduyet.Text = "Phê duyệt hồ sơ";
+            // 
+            // lblDangxuat
+            // 
+            lblDangxuat.AutoSize = true;
+            lblDangxuat.Location = new Point(0, 24);
+            lblDangxuat.Name = "lblDangxuat";
+            lblDangxuat.Size = new Size(61, 15);
+            lblDangxuat.TabIndex = 1;
+            lblDangxuat.TabStop = true;
+            lblDangxuat.Text = "Đăng xuất";
+            lblDangxuat.LinkClicked += lblDangxuat_LinkClicked;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(1266, 450);
-            this.Controls.Add(this.menuStrip1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "frmMain";
-            this.Text = "Quản Lý Nhân Sự";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightSkyBlue;
+            ClientSize = new Size(1266, 450);
+            Controls.Add(lblDangxuat);
+            Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuStrip1;
+            Name = "frmMain";
+            Text = "Quản Lý Nhân Sự";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
 
@@ -229,5 +230,6 @@
         private ToolStripMenuItem mnuBHXH;
         private ToolStripMenuItem mnuBienche;
         private ToolStripMenuItem mnuPheduyet;
+        private LinkLabel lblDangxuat;
     }
 }

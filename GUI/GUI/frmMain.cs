@@ -38,5 +38,12 @@ namespace QLNhânSự
             frmCudihoc.Show();
             this.Hide();
         }
+
+        private void lblDangxuat_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
+            this.Close();
+        }
     }
 }

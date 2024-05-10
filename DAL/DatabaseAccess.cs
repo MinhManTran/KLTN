@@ -84,16 +84,17 @@ namespace DAL
             return LoaiTK;
         }
 
-        public static string GetEmailDTO(Taikhoan taikhoan)
+        
+        public static string CheckMKDTO(Taikhoan taikhoan)
         {
-            string Email = null;
+            string Matkhau = null;
             // Hàm connect toiws CSDL
             SqlConnection conn = SqlConnectionData.Connect();
             conn.Open();
-            SqlCommand command = new SqlCommand("proc_Email", conn);
+            SqlCommand command = new SqlCommand("proc_Matkhau", conn);
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.AddWithValue("@user", taikhoan.TenTK);
-            //command.Parameters.AddWithValue("@pass", taikhoan.Matkhau);
+            command.Parameters.AddWithValue("@Email", taikhoan.Email);
             //command.Parameters.AddWithValue("@LoaiTK", taikhoan.LoaiTK);
 
             command.Connection = conn;
@@ -102,17 +103,19 @@ namespace DAL
             {
                 while (reader.Read())
                 {
-                    Email = reader.GetString(0);
-                    return Email;
+                    Matkhau = reader.GetString(0);
+                    return Matkhau;
                 }
                 reader.Close();
                 conn.Close();
             }
             else
             {
-                return "Lỗi";
+                return "Tài khoản hoặc Email không chính xác!";
             }
-            return Email;
+            return Matkhau;
         }
+
+
     }
 }

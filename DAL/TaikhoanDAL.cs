@@ -23,9 +23,9 @@ namespace DAL
             return info;
         }
 
-        public string GetEmail(Taikhoan taikhoan)
+        public string CheckMK(Taikhoan taikhoan)
         {
-            string info = GetEmailDTO(taikhoan);
+            string info = CheckMKDTO(taikhoan);
             return info;
         }
     }

@@ -32,10 +32,22 @@ namespace BLL
             return info;
         }
 
-        public string GetEmail(Taikhoan taikhoan)
+        
+
+        public string CheckMK(Taikhoan taikhoan)
         {
-            string info = tkDAL.GetEmail(taikhoan);
+            //Kiểm tra nghiệp vụ
+            if (taikhoan.TenTK == "")
+            {
+                return "Taikhoan_Empty";
+            }
+            if (taikhoan.Email == "")
+            {
+                return "Email_Empty";
+            }
+            string info = tkDAL.CheckMK(taikhoan);
             return info;
         }
     }
+    
 }
